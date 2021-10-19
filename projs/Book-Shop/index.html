@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+</head>
+
+<body onload="onInit()">
+    <div class="header">
+        <h1>Welcome to my Book-Shop <img class="shh-img" src="img\shh.png" /></h1>
+    </div>
+    <button class="add-books-btn" onclick="onAddBooks()">add books +</button>
+    <div class="add-books-modal">
+        <input onfocus="this.value=''" class="book-title" type="text" placeholder="Title">
+        <input onfocus="this.value=''" class="book-price" type="text" placeholder="Price">
+    </div>
+    <div class="table-container">
+        <table>
+
+            <tbody class="table"></tbody>
+        </table>
+        <div class="update-books-modal slide-in-blurred-top">
+            <input class="update-title" type="text" placeholder="whats the new title?" onfocus="this.value=''">
+            <input class="update-price" type="text" placeholder="whats the new price?" onfocus="this.value=''">
+        </div>
+
+    </div>
+    <button class="next-btn" onclick="onNextPage()">Next Page</button>
+    <div class="modal bounce-in-top">
+        <h2></h2>
+        <h4></h4>
+        <p></p>
+        <h1></h1>
+        <h3>Rate This Book</h3>
+        <section id="rate" class="rating">
+
+        </section>
+
+        <button class="close-btn" onclick="closeModal()">Close</button>
+    </div>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/bookshop-service.js"></script>
+    <script src="js/bookshop-controller.js"></script>
+</body>
+
+</html>

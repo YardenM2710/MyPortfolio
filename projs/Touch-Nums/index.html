@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch The Nums</title>
+</head>
+
+<body onload="init()">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+
+
+    <h1>Touch The Nums</h1>
+    <div class="stopwatch">
+        <div class="circle">
+            <span class="time" id="display">00:00:00</span>
+        </div>
+        <div class="btn-container">
+            <button onclick="createBoard()">Easy</button>
+            <button onclick="createBoard(25)">Normal</button>
+            <button onclick="createBoard(36)">Hard</button>
+        </div>
+
+
+        <table class="table">
+
+        </table>
+
+
+        <div class="modal slide-in-fwd-center">
+            <h1>You Won! </h1>
+            <img class="img" src="img\clap.gif.gif">
+            <button onclick="restartGame()">Restart </button>
+        </div>
+        <script src="js\utills.js"></script>
+        <script src="js\main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineSweeper</title>
+</head>
+<body onload="init()">
+    <div class="stars-container">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+    </div>
+    
+        <h1>InterGalactic MineSweeper</h1>
+       
+        <div onclick="restartGame()" class="smiley">
+            <span>Lets GO</span>
+        </div>
+
+    <div class="stopwatch">
+        <div class="circle">
+            <span class="time" id="display">00:00:00</span>
+        </div>
+        <div onclick="getHint()" class="hints"></div>
+    <div class="board-container">
+        <table class="table">
+          
+        </table>
+    </div>
+            <div class="status-container">
+                <div class="lives-container"></div>
+                <div class="flags-container"></div>
+            </div>
+
+        <div class="diff-container">
+            <button onclick="setDiff(4)">Easy</button>
+            <button onclick="setDiff(6)">Medium</button>
+            <button onclick="setDiff(8)">Hard</button>
+            <button onclick="showSafeClick()" class="safe-click-btn">Safe Click <br> <span>3 clicks remain</span></button>
+            <button onclick="restartGame()" class="restart-btn">Restart</button>
+            <button onclick="undo()" class="undo-btn">Undo</button>
+        </div>
+    </div>
+    <div class="winner-modal">
+        
+    </div>
+    <div class="looser-modal">
+        
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/utills.js"></script>
+    <script src="js/create.js"></script>
+</body>
+</html>
